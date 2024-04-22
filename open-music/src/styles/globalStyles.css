@@ -1,0 +1,27 @@
+/* Estilizações Globais */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --background-color-white: #FDFEFF;
+    --background-color-dark: #15171A;
+    --text-color-mainly-white: #212529;
+    --text-color-secundary-white: #8629FF;
+    --text-color-mainly-dark: #F8F9FA;
+    --text-color-secundary-dark: #6F00FF;
+    --text-color-nameBand-White: #2B2F33;
+    --text-color-buttonPurchase: #FFFFFF;
+    --input-color-rage-white: #DEE2E6;
+    --input-color-rage-dark: #CED4DA;
+    --button-background-color-white: #F1F3F5;    
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color-white);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
