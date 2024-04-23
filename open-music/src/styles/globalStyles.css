@@ -12,7 +12,8 @@
     --text-color-buttonPurchase: #FFFFFF;
     --input-color-rage-white: #DEE2E6;
     --input-color-rage-dark: #CED4DA;
-    --button-background-color-white: #F1F3F5;    
+    --button-background-color-white: #F1F3F5;
+       
 }
 
 body {
@@ -21,7 +22,9 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    position: relative;    
 }
+
 
 
 

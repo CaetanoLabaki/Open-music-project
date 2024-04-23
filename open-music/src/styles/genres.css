@@ -1,1 +1,41 @@
 /* Estilização dos generos */
+.generos__musicais__section {
+    width: 100%;
+    font-size: 24px;
+}
+
+.generos__musicais__elements {
+    max-width: 1024px;
+    padding: 4rem 0rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 2rem;    
+}
+
+.generos__musicais__elements h2 {
+    font-size: 1.8rem;
+    display: flex;
+}
+
+.generos__musicais__inputs {
+    display: flex;
+    gap: 5rem;
+    font-size: 1rem;
+    color: var(--text-color-nameBand-White);    
+}
+
+.radio-container {
+    position: relative;
+}
+
+.radio-label {
+    position: absolute;
+    
+}
+
+.radio-input {
+    position: absolute;
+    z-index: -1;    
+}
+
