@@ -21,7 +21,8 @@
 .albums__container {
     display: flex;
     flex-wrap: wrap;    
-    justify-content: space-between;    
+    justify-content: space-between;
+    gap: 1rem;    
 }
 
 .album__information {
@@ -70,7 +71,7 @@
 }
 
 .album__information:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
     
