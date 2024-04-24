@@ -22,20 +22,59 @@
     display: flex;
     gap: 5rem;
     font-size: 1rem;
-    color: var(--text-color-nameBand-White);    
+    color: var(--text-color-nameBand-White); 
+    list-style: none;    
 }
+
+.generos__musicais__inputs:after {
+    content: "";
+    clear: both;
+};
 
 .radio-container {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
     position: relative;
+    width: 120px;
 }
 
-.radio-label {
-    position: absolute;
-    
+.radio-container + .radio-container {
+    margin-left: 25px;
 }
 
-.radio-input {
+.radio-container label {
+    background: #fff no-repeat center center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;    
+    white-space: nowrap;    
+}
+
+.radio-container label span {
+    z-index: 1;
+}
+
+.radio-input {  
+    all: unset;
     position: absolute;
-    z-index: -1;    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: black solid 1px;
+    background-color: var(--button-background-color-white);
+    border-radius: 3px;  
+}
+
+.radio-input:checked {
+    background-color: var(--text-color-mainly-white);
+}
+
+.radio-input:checked + span {
+    color: #ffffff;
 }
 
