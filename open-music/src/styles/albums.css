@@ -13,8 +13,7 @@
 }
 
 .albums__elements h2 {
-    font-size: 1.8rem;
-    color: var( --text-color-mainly-white);
+    font-size: 1.8rem;    
     display: flex;    
 }
 
@@ -29,11 +28,17 @@
 }
 
 .album__information {
-    background-color: var(--text-color-mainly-dark);
+    background-color: var(--album-background-color-lightMode);
     display: flex;
     flex-direction: column;
     gap: 1REM;
+    color: var(--text-color-mainly-lightMode);
 }
+
+.album-none {
+    display: none;
+}
+
 
 .album-Img {
   height: 290px;
@@ -44,8 +49,7 @@
 .album-title {
     display: flex;
     font-size: 1.375rem;
-    padding: 0.313rem 1rem;
-    color: var(--text-color-mainly-white);
+    padding: 0.313rem 1rem;   
 }
 
 .album__name {
@@ -68,7 +72,7 @@
 }
 
 .button-purchase {
-    background-color: var( --text-color-secundary-white);
+    background-color: var(--text-color-secundary-darkMode);
     color: #ffff;
     border: transparent 1px solid;
     border-radius: 0.25rem;

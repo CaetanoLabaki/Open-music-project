@@ -6,7 +6,7 @@
 
 .generos__musicais__elements {
     max-width: 1024px;
-    padding: 4rem 0rem;
+    padding: 4rem 0rem 2rem 0;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -18,63 +18,31 @@
     display: flex;
 }
 
-.generos__musicais__inputs {
+.generos__musicais__buttons {
     display: flex;
-    gap: 5rem;
+    gap: 1.5rem;
+    padding: 0;      
+}
+
+.button_genre {    
+    border: none;
+    padding: 0.638rem 0.7rem;
     font-size: 1rem;
-    color: var(--text-color-nameBand-White); 
-    list-style: none;    
-}
-
-.generos__musicais__inputs:after {
-    content: "";
-    clear: both;
-};
-
-.radio-container {
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    float: left;
-    height: 70px;
-    position: relative;
-    width: 120px;
-}
-
-.radio-container + .radio-container {
-    margin-left: 25px;
-}
-
-.radio-container label {
-    background: #fff no-repeat center center;
+    border-radius: 0.25rem;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;    
-    white-space: nowrap;    
 }
 
-.radio-container label span {
-    z-index: 1;
+.button_genre {    
+    background-color: var(--buttonGenre--background-color);
+    color: var(--text-color-mainly-lightMode);
 }
 
-.radio-input {  
-    all: unset;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border: black solid 1px;
-    background-color: var(--button-background-color-white);
-    border-radius: 3px;  
+.button-click {
+    background-color: var(--background-color-darkMode);
+    color: var(--background-color-lightMode);
+    cursor: pointer;
 }
 
-.radio-input:checked {
-    background-color: var(--text-color-mainly-white);
-}
 
-.radio-input:checked + span {
-    color: #ffffff;
-}
+
 

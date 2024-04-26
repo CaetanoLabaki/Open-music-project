@@ -17,7 +17,7 @@
     <header>
       <div class="header__content">
         <h1><span>o</span>pen <span>m</span>usic</h1>
-        <button><img src="src/assets/icons/Theme Button.svg" alt="Icon de lua"></button>
+        <button class="button-style"><img src="src/assets/icons/Theme Button.svg" class="moon-icon" alt="Icon de lua"><img src="src/assets/icons/sun.svg" class="sun-icon" alt="Icond e sol"> </button>
       </div>
     </header>
 
@@ -27,55 +27,15 @@
       <section class="generos__musicais__section">
         <div class="generos__musicais__elements">
           <h2>Gênero Musical</h2>
-          <div class="generos__musicais__inputs">
-            <div class="radio-container">
-              <label>
-                 <input type="radio" id="todos" class="radio-input" name="genero">
-                 <span>Todos</span>
-              </label>             
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="pop" class="radio-input" name="genero">
-                <span>Pop</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="mpb" class="radio-input" name="genero">
-                <span>MPB</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="forro" class="radio-input" name="genero">
-                <span>Forró</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="samba" class="radio-input" name="genero">
-                <span>Samba</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="baiao" class="radio-input" name="genero">
-                <span>Baião</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="rap" class="radio-input" name="genero">
-                <span>Rap</span>
-             </label>   
-            </div>
-            <div class="radio-container">
-              <label>
-                <input type="radio" id="hiphop" class="radio-input" name="genero">
-                <span>Hip-Hop</span>
-             </label>   
-            </div>          
+          <div class="generos__musicais__buttons">            
+              <button class="button_genre">Todos</button>           
+              <button class="button_genre">Pop</button>           
+              <button class="button_genre">MPB</button>            
+              <button class="button_genre">Forró</button>            
+              <button class="button_genre">Samba</button>            
+              <button class="button_genre">Baião</button>     
+              <button class="button_genre">Rap</button>                        
+              <button class="button_genre">Hip-Hop</button>                      
           </div>  
         </div>     
       </section>
@@ -85,7 +45,7 @@
         <div class="price__range__elements">
           <div class="price__range__text">
             <h2>Definir Preço</h2>
-            <p>Até <span>R$ 100</span></p>
+            <p>Até <span id="price-display">R$ 100</span></p>
           </div>          
           <input type="range" name="preço" id="price-range" min="0" max="150" value="150">
         </div>

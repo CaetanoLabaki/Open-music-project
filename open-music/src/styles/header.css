@@ -4,7 +4,7 @@ header {
     position: sticky;
     z-index: 1;
     top: 0;
-    background-color: var(--background-color-white);      
+    background-color: var(--background-color-lightMode);      
 }
 
 .header__content {
@@ -13,19 +13,47 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid var(--text-color-secundary-white);
-    color: var(--text-color-mainly-white);
+    border-bottom: 3px solid var(--text-color-secundary-darkMode);    
     font-size: 2.5rem;
 }
 
 .header__content span {
-    color: var(--text-color-secundary-white);
+    color: var(--text-color-secundary-darkMode);
 }
 
-.header__content button {
-    background-color: var(--button-background-color-whit);
+.button-style { 
+    text-align: center;
+    display: flex;
+    align-items: center;   
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--buttonGenre--background-color);
+    width: 44px;
+    height: 36px;
+          
 }
+
+.button-style img {
+    margin: 0 auto;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.sun-icon-on {
+    display: block;
+}
+
+.moon-icon-none {
+    display: none;
+}
+
+
+
+
+
+
 
 
