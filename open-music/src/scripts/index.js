@@ -1,21 +1,7 @@
 /* Script Global */
 
-//Lógica de selecionar e deselecioanar os botões de gênero:
-
-const buttonsGenre = document.querySelectorAll('.button_genre');
-
-function toggleSelectedButton() {
-    buttonsGenre.forEach(button => {
-        button.classList.remove('button-click');
-    });
-    this.classList.add('button-click')
-}
-
-buttonsGenre.forEach(button => {
-    button.addEventListener('click', toggleSelectedButton)
-});
-
-
+import { fetchAlbums } from './api.js';
+const albunsAPI = await fetchAlbums();
 
 //import do Input Range
 
@@ -29,7 +15,7 @@ routine();
 
 //Inserir albums dinamicamente
 
-import { albumList } from './albumsDatabase.js'
+//import { albumList } from './albumsDatabase.js'
 
 const albumsContainer = document.querySelector('.albums__container'); 
 
@@ -42,7 +28,7 @@ function addNewAlbum(array) {
     });
 }
 
-    addNewAlbum(albumList);
+    addNewAlbum(albunsAPI);
 
 
 function newAlbum(album) {    
@@ -125,6 +111,49 @@ const priceRange = document.getElementById('price-range');
 
  
   filterAlbumsByPrice();
+  
+
+  //Lógica de selecionar e deselecioanar os botões de gênero:
+
+const buttonsGenre = document.querySelectorAll('.button_genre');
+
+function toggleSelectedButton() {
+    buttonsGenre.forEach(button => {
+        button.classList.remove('button-click');
+    });
+    this.classList.add('button-click')
+}
+
+buttonsGenre.forEach(button => {
+    button.addEventListener('click', toggleSelectedButton)
+});
+
+// Lógica de filtro de genero:
+
+buttonsGenre.forEach(button => {
+    button.addEventListener('click', () => {
+        const selectGenre = button.textContent.trim();
+        albumListArray.forEach(album => {
+            const albumGenre = album.querySelector('span').textContent.trim();
+            if (albumGenre === selectGenre || selectGenre === 'Todos') {
+                album.style.display = 'block';
+            } else {
+                album.style.display = 'none';
+            }
+        })        
+    })
+})
+
+
+
+
+
+  
+
+
+
+
+
 
 
 

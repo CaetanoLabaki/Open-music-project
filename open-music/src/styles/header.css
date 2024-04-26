@@ -31,7 +31,7 @@ header {
     background-color: var(--buttonGenre--background-color);
     width: 44px;
     height: 36px;
-          
+    justify-content: center;          
 }
 
 .button-style img {
